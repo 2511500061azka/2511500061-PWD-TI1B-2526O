@@ -6,4 +6,5 @@
 <li>styling footer</li>
 <li>styling navigasi</li>
 <li>styling header mode mobile</li>
+<li>styling navigasi mode mobile</li>
 </ol>
