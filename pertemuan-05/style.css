@@ -111,6 +111,7 @@ header li a {
                 nav.active {
                     display: flex;
                 }
+                
               header {
                 padding: 16px;
                 position: sticky;
