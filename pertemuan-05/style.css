@@ -100,11 +100,11 @@ header li a {
                 }
 
                 nav {
-                    display: none
-                    flex-direction: colum;
+                    display: none;
+                    flex-direction: column;
                     background-color: #003366;
                     width: 100%;
-                    paadding: 5px 0;
+                    padding: 5px 0;
 
                 }
               header {
