@@ -42,6 +42,7 @@ document.querySelector("form").addEventListener("submit", function (e){
     if (!isValid) {
         e.preventDefault();
     } else {
+        e.preventDefault();
         alert("terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
     }
 });
