@@ -14,7 +14,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const email = document.getElementById("txtEmail");
     const pesan = document.getElementById("txtPesan");
     
-    document.querySelectorAll(".error-msg").forEach(el => el.remove());
+    document.querySelectorAll(".error-msg").forEach(eL => eL.remove());
     [nama, email, pesan].forEach(eL => eL.style.border = "");
 
     let isValid = true;
@@ -26,19 +26,18 @@ document.querySelector("form").addEventListener("submit", function (e) {
         showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
         isValid = false;
     }
-    }
-
+    
     if (email.value.trim() === "") {
         showError(email, "Email wajib diisi.");
         isValid = false;
-    } else if (!/^[^\s@+@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         showError(email, "Format email tidak valid. Contoh: nama@mail.com");
         isValid = false;
     }
 
     if (pesan.value.trim().length < 10) {
         showError(pesan, "Pesan minimal 10 karakter agar lebih jelas.");
-
+        isValid = false;
     }
 
     if (!isValid) {
@@ -73,7 +72,7 @@ function showError(inputElement, message) {
         label.appendChild(small);
     }
 
-    inputElement.stle.border = "1px solid red";
+    inputElement.style.border = "1px solid red";
 
     alignErrorMessage(small, inputElement);
 }
@@ -93,12 +92,12 @@ function alignErrorMessage(smaLLEL, inputEL) {
     const rectInput = inputEL.getBoundingClientRect();
     const offsetLeft = Math.max(0, Math.round(rectInput.left - rectLabel.left));
 
-    smaLLEL.style.marginLeft = offsetLeft = "px ";
+    smaLLEL.style.marginLeft = offsetLeft = "px";
     smaLLEL.style.width = Math.round(rectInput.width) + "px";
 }
 
 window.addEventListener("resize", () => {
-    Document.querySelectorAll(".error-msg").forEach(small => {
+    document.querySelectorAll(".error-msg").forEach(small => {
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(smaLL, target); 
     });
