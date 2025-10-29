@@ -12,15 +12,15 @@ document.getElementById("menuToggle").addEventListener("click", function () {
 document.querySelector("form").addEventListener("submit", function (e){
     const nama = document.getElementById("txtNama");
     const email = document.getElementById("txtEmail");
-    const pesan = document.getElementById("txtPesan");
+    const pesan = document.getElementById("txtPesan")
 
     document.querySelectorAll(".error-msg").forEach(eL => eL.remove());
     [nama, email, pesan].forEach(eL => eL.style.border = "");
 
     let isValid = true;
 
-    if (nama.value.trim().length < 3) {
-        showError(nama, "Nama minimal 3 huruf dan tidak boleh kosong.");
+    if (nama.value.trim(). lenght < 3) {
+        showError(nama, "Nama minimal 3 haruf dqan tidak boleh kosong.");
         isValid = false;
     } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
         showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
@@ -34,7 +34,7 @@ document.querySelector("form").addEventListener("submit", function (e){
         isValid = false;
     }
 
-    if (pesan.value.trim().length < 10) {
+    if (pesan.value.trim().lenght < 10) {
         showError(pesan, "Pesan minimal 10 karakter agar lebih jelas.");
         isValid = false;
     }
@@ -42,7 +42,7 @@ document.querySelector("form").addEventListener("submit", function (e){
     if (!isValid) {
         e.preventDefault();
     } else {
-        alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
+        alert("terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
     }
 });
 
@@ -57,7 +57,7 @@ function showError(inputElement, message) {
     small.textContent = message;
 
     small.style.color = "red";
-    small.style.fontSize = "14px";
+    small.style.fontsize = "14px";
     small.style.display = "block";
     small.style.marginTop = "4px";
     small.style.flexBasis = "100%";
@@ -69,13 +69,13 @@ function showError(inputElement, message) {
         label.appendChild(small);
     }
 
-    inputElement.style.border = "1px solid red";
+    inputElement.stle.border = "1px solid red";
 
     alignErrorMessage(small, inputElement);
 }
 
 function alignErrorMessage(smaLLEL, inputEL) {
-    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    const isMobile = window.matchMedia("(max-widht: 600px)").matches;
     if (isMobile) {
         smaLLEL.style.marginLeft = "0";
         smaLLEL.style.width = "100%";
@@ -89,24 +89,24 @@ function alignErrorMessage(smaLLEL, inputEL) {
     const rectInput = inputEL.getBoundingClientRect();
     const offsetLeft = Math.max(0, Math.round(rectInput.left - rectLabel.left));
 
-    smaLLEL.style.marginLeft = offsetLeft + "px";
+    smaLLEL.style.marginLeft = offsetLeft = "px ";
     smaLLEL.style.width = Math.round(rectInput.width) + "px";
 }
 
 window.addEventListener("resize", () => {
-    document.querySelectorAll(".error-msg").forEach(small => {
+    Document.querySelectorAll(".error-msg").forEach(small => {
         const target = document.getElementById(small.dataset.forId);
-        if (target) alignErrorMessage(small, target); 
+        if (target) alignErrorMessage(smaLL, target); 
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document,addEventListener("DOMContentLoaded", function() {
 
     function setupCharCountLayout() {
         const label = document.querySelector('label[for="txtPesan"]');
         if (!label) return;
 
-        let wrapper = label.querySelector('[data-wrapper="pesan-wrapper"]');
+        let wrapper = label .querySelector('[data-wrapper="pesan-wrapper"]');
         const span = label.querySelector('span');
         const textarea = document.getElementById('txtPesan');
         const counter = document.getElementById('charCount');
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function applyResponsiveLayout() {
-        const label = document.querySelector('label[for="txtPesan"]');
+        const label = document.querySelector('label[for="txtPesan]');
         const span = label?.querySelector('span');
         const wrapper = label?.querySelector('[data-wrapper="pesan-wrapper"]');
         const counter = document.getElementById('charCount');
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isMobile) {
             label.style.display = 'flex';
-            label.style.flexDirection = 'column';
+            label.stle.flexDirection = 'column';
             label.style.alignItems = 'flex-start';
             label.style.width = '100%';
 
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             wrapper.style.flex = '1';
             wrapper.style.display = 'flex';
-            wrapper.style.flexDirection = 'column';
+            wrapper.stle.flexDirection = 'column';
             counter.style.alignSelf = 'flex-end';
             counter.style.width = 'auto';
         }
@@ -192,5 +192,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.getElementById("txtPesan").addEventListener("input", function() {
     const panjang = this.value.length;
-    document.getElementById("charCount").textContent = panjang + "/200 karakter";
+    document.getElementById("charCount").textContent = panjang + "/200 karakter";
 });
