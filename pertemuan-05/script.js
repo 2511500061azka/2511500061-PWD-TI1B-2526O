@@ -13,7 +13,7 @@ menuToggle.addEventListener("click", function () {
 
 document.querySelector("form").addEventListener("submit", function (e) {
   const nama = document.getElementById("txtNama").value.trim();
-  const email = document.getElementById("txtemail").value.trim(); // ✅ diperbaiki
+  const email = document.getElementById("txtemail").value.trim(); 
   const pesan = document.getElementById("txtPesan").value.trim();
 
   if (nama === "" || email === "" || pesan === "") {
@@ -26,7 +26,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 document.querySelector("form").addEventListener("submit", function (e) {
   const nama = document.getElementById("txtNama");
-  const email = document.getElementById("txtemail"); // ✅ diperbaiki
+  const email = document.getElementById("txtemail"); 
   const pesan = document.getElementById("txtPesan");
 
   document.querySelectorAll(".error-msg").forEach(el => el.remove());
