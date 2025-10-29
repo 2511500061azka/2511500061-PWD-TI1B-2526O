@@ -42,7 +42,7 @@ document.querySelector("form").addEventListener("submit", function (e){
     if (!isValid) {
         e.preventDefault();
     } else {
-        alert("terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
+        alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
     }
 });
 
@@ -74,11 +74,11 @@ function showError(inputElement, message) {
     alignErrorMessage(small, inputElement);
 }
 
-function alignErrorMessage(small, inputEL) {
+function alignErrorMessage(smaLLEL, inputEL) {
     const isMobile = window.matchMedia("(max-width: 600px)").matches;
     if (isMobile) {
-        small.style.marginLeft = "0";
-        small.style.width = "100%";
+        smaLLEL.style.marginLeft = "0";
+        smaLLEL.style.width = "100%";
         return;
     }
 
@@ -89,8 +89,8 @@ function alignErrorMessage(small, inputEL) {
     const rectInput = inputEL.getBoundingClientRect();
     const offsetLeft = Math.max(0, Math.round(rectInput.left - rectLabel.left));
 
-    small.style.marginLeft = offsetLeft + "px";
-    small.style.width = Math.round(rectInput.width) + "px";
+    smaLLEL.style.marginLeft = offsetLeft + "px";
+    smaLLEL.style.width = Math.round(rectInput.width) + "px";
 }
 
 window.addEventListener("resize", () => {
