@@ -43,7 +43,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     if (!isValid) {
         e.preventDefault();
     } else {
-        e.preventDefault(); // ✅ tambahan penting: agar alert muncul & tidak reload
+        e.preventDefault();
         alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
     }
 });
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
             wrapper.style.width = '100%';
             wrapper.style.flex = '1';
             wrapper.style.display = 'flex';
-            wrapper.style.flexDirection = 'column'; // ✅ diperbaiki dari colum
+            wrapper.style.flexDirection = 'column'; 
 
             label.insertBefore(wrapper, textarea);
             wrapper.appendChild(textarea);
