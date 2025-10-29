@@ -28,14 +28,14 @@ document.querySelector("form"). addEventListener("submit", function (e){
     }
 
     if (email.value.trim()=== "") {
-        shoError(email, "Email wajaib diisi.");
+        showError(email, "Email wajaib diisi.");
         isValid = false;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         showError(email, "Format email tidak valid, Contoh: nama@mail.com");
         isValid = false;
     }
 
-    if (pesan.value.trim().lenght < 10) {
+    if (pesan.value.trim().length < 10) {
         showError(pesan, "Pesan minimal 10 karakter agar lebih jelas.");
         isValid = false;
     }
@@ -70,13 +70,13 @@ function showError(inputElement, message) {
         label.appendChild(small);
     }
 
-    inputElement.stle.border = "1px solid red";
+    inputElement.style.border = "1px solid red";
 
     alignErrorMessage(small, inputElement);
 }
 
 function alignErrorMessage(smaLLEL, inputEL) {
-    const isMobile = window.matchMedia("(max-widht: 600px)").matches;
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
     if (isMobile) {
         smaLLEL.style.marginLeft = "0";
         smaLLEL.style.width = "100%";
@@ -101,7 +101,7 @@ window.addEventListener("resize", () => {
     });
 });
 
-document,addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     function setupCharCountLayout() {
         const label = document.querySelector('label[for="txtPesan"]');
@@ -193,5 +193,5 @@ document,addEventListener("DOMContentLoaded", function() {
 
 document.getElementById("txtPesan").addEventListener("input", function() {
     const panjang = this.value.length;
-    document.getElementById("charCount").textContent = panjang + "0/200 karakter";
+    document.getElementById("charCount").textContent = panjang + "/200 karakter";
 });
