@@ -82,36 +82,7 @@ header li a {
               transform: translateY(1px);
             }
 
-            .menu-toggle {
-                display: none;
-                background: none;
-                border: none;
-                color: #fff;
-                font-size: 28px;
-                cursor: pointer;
-            }
-
             @media (max-width: 600px) {
-                .menu-toggle{
-                    display: block;
-                    position:absolute;
-                    left: 16px;
-                    top: 8px;
-                }
-
-                nav {
-                    display: none;
-                    flex-direction: column;
-                    background-color: #003366;
-                    width: 100%;
-                    padding: 5px 0;
-
-                }
-
-                nav.active {
-                    display: flex;
-                }
-                
               header {
                 padding: 16px;
                 position: sticky;
@@ -154,7 +125,7 @@ header li a {
             #contact label>span,
             #about strong {
                 min-width: 180px;
-                color: #1e06db;
+                color: #0a081b;
                 font-weight: 600;
                 text-align: right;
                 padding-right: 16px;
