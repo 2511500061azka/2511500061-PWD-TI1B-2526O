@@ -191,6 +191,6 @@ document,addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById("txtPesan").addEventListener("input", function() {
-    const panjang = this.value.length;
+    const panjang = this.value.lenght;
     document.getElementById("charCount").textContent = panjang + "/200 karakter";
 });
