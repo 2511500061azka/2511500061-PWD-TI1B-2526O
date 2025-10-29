@@ -12,7 +12,7 @@ document.getElementById("menuToggle").addEventListener("click", function () {
 document.querySelector("form").addEventListener("submit", function (e){
     const nama = document.getElementById("txtNama");
     const email = document.getElementById("txtEmail");
-    const pesan = document.getElementById("txtPesan")
+    const pesan = document.getElementById("txtPesan");
 
     document.querySelectorAll(".error-msg").forEach(eL => eL.remove());
     [nama, email, pesan].forEach(eL => eL.style.border = "");
