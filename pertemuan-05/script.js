@@ -43,7 +43,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     if (!isValid) {
         e.preventDefault();
     } else {
-        alert("Terima kasih, " + nama.value + "!\nPesan anda telah dikirim.");
+    alert("Terima kasih, " + nama.value + "!\nPesan anda telah dikirim.");
     }
 });
 
@@ -103,7 +103,7 @@ window.addEventListener("resize", () => {
     });
 });
 
-document,addEventListener("DOMContentLoaded", function() {
+document,addEventListener("DOMContentLoaded", function () {
 
     function setupCharCountLayout() {
         const label = document.querySelector('label[for="txtPesan"]');
