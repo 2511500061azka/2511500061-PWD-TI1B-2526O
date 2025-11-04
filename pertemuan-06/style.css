@@ -229,7 +229,53 @@ header li a {
             }
 
            }
-           #ipk {
+           
+           #contact input::placeholder,
+#contact textarea::placeholder {
+    color: #999999;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 178, 255, 0.4);
+}
+
+#contact button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f3f4f6;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #3399ff;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    #contact h2 {
+        font-size: 20px;
+    }
+
+    #contact button {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0;
+        font-size: 15px;
+    }
+}
+#ipk {
     display: flex;
     flex-direction: column;
     align-items: center;
