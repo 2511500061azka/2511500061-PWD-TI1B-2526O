@@ -25,37 +25,33 @@
         <section id="home">
             <h2>selamat datang</h2>
             <P>ini contoh pragraf HTML.</P>
-            <?php 
-            echo "<P>Halo Dunia</P>";
-            echo "<P>Nama Saya Muhammad Azka Nazhan</p>";
-            ?>
         </section>
 
         <?php
-
         $NIM = "2511500061";
         $NAMA = "MUHAMMAD AZKA NAZHAN";
         $TEMPAT_LAHIR = "MUNTOK BANGKA BARAT";
-        $tanggal_lahir = "14-APRIL-2007";
+        $TANGGAL_LAHIR = "14-APRIL-2007";
         $HOBI = "BERMAIN GAME DAN BERMAIN FUTSAL";
         $PASANGAN = "NASYWAERSA";
-        $nama_ayah = "BAPAK TOTO";
-        $nama_ibu = "IBU MAEMUNAH";
-        $kakak_pertama = "FACHRURROZI AKBAR";
-        $kakak_kedua = "SYAFA TASYA FEBRINA";
+        $PEKERJAAN = "MAHASISWA";
+        $NAMA_ORANG_TUA = "BAPAK TOTO DAN IBU MAEMUNAH";
+        $NAMA_KAKAK_PERTAMA = "FACHRURROZI AKBAR";
+        $NAMA_KAKAK_KEDUA = "SYAFA TASYA FEBRINA";
         ?>
+
         <section id="about">
             <h2>About Muhammad azka Nazhan</h2>
-            <p><strong>NIM:</strong><?php echo $NIM; ?></p>
-            <p><strong>NAMA:</strong><?php echo $NAMA; ?></p>
-            <p><strong>TMEPAT LAHIR:</strong><?php echo $TEMPAT_LAHIR; ?></p>
-            <p><strong>TANGGAL LAHIR:</strong><?php echo $tanggal_lahir; ?></p>
-            <p><strong>HOBI:</strong><?php echo $Hobi; ?></p>
-            <p><strong>PASANGAN:</strong><?php echo $Pasangan; ?></p>
-            <p><strong>PEKERJAAN:</strong><?php echo $Pekerjaan; ?></p>
-            <p><strong>NAMA ORANG TUA:</strong><?php echo $Nama_OrangTua; ?></p>
-            <p><strong>NAMA KAKAK PERTAMA:</strong><?php echo $Nama_kakakpertama; ?></p>
-            <p><strong>NAMA KAKAK KEDUA:</strong><?php echo $Nama_kakak_kedua; ?></p>
+            <p><strong>NIM:</strong> <?php echo $NIM; ?></p>
+            <p><strong>NAMA:</strong> <?php echo $NAMA; ?></p>
+            <p><strong>TEMPAT LAHIR:</strong> <?php echo $TEMPAT_LAHIR; ?></p>
+            <p><strong>TANGGAL LAHIR:</strong> <?php echo $TANGGAL_LAHIR; ?></p>
+            <p><strong>HOBI:</strong> <?php echo $HOBI; ?></p>
+            <p><strong>PASANGAN:</strong> <?php echo $PASANGAN; ?></p>
+            <p><strong>PEKERJAAN:</strong> <?php echo $PEKERJAAN; ?></p>
+            <p><strong>NAMA ORANG TUA:</strong> <?php echo $NAMA_ORANG_TUA; ?></p>
+            <p><strong>NAMA KAKAK PERTAMA:</strong> <?php echo $NAMA_KAKAK_PERTAMA; ?></p>
+            <p><strong>NAMA KAKAK KEDUA:</strong> <?php echo $NAMA_KAKAK_KEDUA: ?></p>
 
 
     </section>
