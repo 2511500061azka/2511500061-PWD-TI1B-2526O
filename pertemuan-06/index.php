@@ -27,6 +27,10 @@
     <section id="home">
       <h2>Selamat Datang</h2>
       <p>Ini contoh paragraf HTML.</p>
+      <?php 
+      echo "<p>Halo Dunia</p>";
+      echo "<p>Nama Saya Muhammad Azka Nazhan</P>";
+      ?>
     </section>
 
     <?php
