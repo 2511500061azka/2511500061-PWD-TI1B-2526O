@@ -28,6 +28,11 @@
       <h2>Selamat Datang</h2>
       <p>Ini contoh paragraf HTML.</p>
       <?php 
+      ?>
+    </section>
+    <section id="about">
+      <h2>About Muhammad Azka Nazhan</h2>
+      <?php 
       echo "<p>Halo Dunia</p>";
       echo "<p>Nama Saya Muhammad Azka Nazhan</P>";
       ?>
@@ -56,21 +61,6 @@ echo "<p><strong>NAMA ORANG TUA:</strong>BAPAK TOTO DAN IBU MAEMUNAH</p>";
 echo "<p><strong>NAMA KAKAK PERTAMA:</strong>FACHRURROZI AKBAR</p>";
 echo "<p><strong>NAMA KAKAK KEDUA:</strong>SYAFA TASYA FEBRINA</p>";
     ?>
-
-
-
-    <section id="about">
-      <h2>About Muhammad Azka Nazhan</h2>
-      <p><strong>NIM:</strong> <?php echo $NIM; ?></p>
-      <p><strong>NAMA:</strong> <?php echo $NAMA; ?></p>
-      <p><strong>TEMPAT LAHIR:</strong> <?php echo $TEMPAT_LAHIR; ?></p>
-      <p><strong>TANGGAL LAHIR:</strong> <?php echo $TANGGAL_LAHIR; ?></p>
-      <p><strong>HOBI:</strong> <?php echo $HOBI; ?></p>
-      <p><strong>PASANGAN:</strong> <?php echo $PASANGAN; ?></p>
-      <p><strong>PEKERJAAN:</strong> <?php echo $PEKERJAAN; ?></p>
-      <p><strong>NAMA ORANG TUA:</strong> <?php echo $NAMA_ORANG_TUA; ?></p>
-      <p><strong>NAMA KAKAK PERTAMA:</strong> <?php echo $NAMA_KAKAK_PERTAMA; ?></p>
-      <p><strong>NAMA KAKAK KEDUA:</strong> <?php echo $NAMA_KAKAK_KEDUA; ?></p>
     </section>
     <section id="ipk">
         <h2>Nilai Saya</h2>
