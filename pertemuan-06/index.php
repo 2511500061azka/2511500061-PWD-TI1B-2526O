@@ -44,7 +44,20 @@
     $NAMA_ORANG_TUA = "BAPAK TOTO DAN IBU MAEMUNAH";
     $NAMA_KAKAK_PERTAMA = "FACHRURROZI AKBAR";
     $NAMA_KAKAK_KEDUA = "SYAFA TASYA FEBRINA";
+
+echo "<p><strong>NIM:</strong>2511500061</p>";
+echo "<p><strong>NAMA:</strong>MUHAMMAD AZKA NAZHAN</p>";
+echo "<p><strong>TMEPAT LAHIR:</strong>MUNTOK BANGKA BARAT</p>";
+echo "<p><strong>TANGGAL LAHIR:</strong>14-APRIL-2007</p>";
+echo "<p><strong>HOBI:</strong>BERMAIN GAME DAN BERMAIN FUTSAL</p>";
+echo "<p><strong>PASANGAN:</strong>NASYWAERSA</p>";
+echo "<p><strong>PEKERJAAN:</strong>MAHASISWA</p>";
+echo "<p><strong>NAMA ORANG TUA:</strong>BAPAK TOTO DAN IBU MAEMUNAH</p>";
+echo "<p><strong>NAMA KAKAK PERTAMA:</strong>FACHRURROZI AKBAR</p>";
+echo "<p><strong>NAMA KAKAK KEDUA:</strong>SYAFA TASYA FEBRINA</p>";
     ?>
+
+
 
     <section id="about">
       <h2>About Muhammad Azka Nazhan</h2>
