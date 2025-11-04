@@ -30,16 +30,11 @@
       <?php 
       ?>
     </section>
+
     <section id="about">
       <h2>About Muhammad Azka Nazhan</h2>
       <?php 
-      echo "<p>Halo Dunia</p>";
-      echo "<p>Nama Saya Muhammad Azka Nazhan</P>";
-      ?>
-    </section>
-
-    <?php
-    $NIM = "2511500061";
+      $NIM = "2511500061";
     $NAMA = "MUHAMMAD AZKA NAZHAN";
     $TEMPAT_LAHIR = "MUNTOK BANGKA BARAT";
     $TANGGAL_LAHIR = "14-APRIL-2007";
@@ -50,17 +45,28 @@
     $NAMA_KAKAK_PERTAMA = "FACHRURROZI AKBAR";
     $NAMA_KAKAK_KEDUA = "SYAFA TASYA FEBRINA";
 
-echo "<p><strong>NIM:</strong>2511500061</p>";
+    echo "<p><strong>NIM:</strong>2511500061</p>";
+
 echo "<p><strong>NAMA:</strong>MUHAMMAD AZKA NAZHAN</p>";
+
 echo "<p><strong>TMEPAT LAHIR:</strong>MUNTOK BANGKA BARAT</p>";
+
 echo "<p><strong>TANGGAL LAHIR:</strong>14-APRIL-2007</p>";
+
 echo "<p><strong>HOBI:</strong>BERMAIN GAME DAN BERMAIN FUTSAL</p>";
+
 echo "<p><strong>PASANGAN:</strong>NASYWAERSA</p>";
+
 echo "<p><strong>PEKERJAAN:</strong>MAHASISWA</p>";
+
 echo "<p><strong>NAMA ORANG TUA:</strong>BAPAK TOTO DAN IBU MAEMUNAH</p>";
+
 echo "<p><strong>NAMA KAKAK PERTAMA:</strong>FACHRURROZI AKBAR</p>";
+
 echo "<p><strong>NAMA KAKAK KEDUA:</strong>SYAFA TASYA FEBRINA</p>";
+
     ?>
+
     </section>
     <section id="ipk">
         <h2>Nilai Saya</h2>
