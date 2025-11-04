@@ -63,30 +63,30 @@
         <h2>Nilai Saya</h2>
         <?php 
         $namaMatkul1 = "Algoritma dan Struktur Data";
-    $sksMatkul1 = 4;
+    $sksMatkul1 = 3;
     $nilaiHadir1 = 90;
-    $nilaiTugas1 = 60;
-    $nilaiUTS1 = 80;
+    $nilaiTugas1 = 65;
+    $nilaiUTS1 = 78;
     $nilaiUAS1 = 70;
 
     $namaMatkul2 = "Agama";
     $sksMatkul2 = 2;
-    $nilaiHadir2 = 70;
+    $nilaiHadir2 = 76;
     $nilaiTugas2 = 50;
-    $nilaiUTS2 = 60;
+    $nilaiUTS2 = 70;
     $nilaiUAS2 = 80;
 
     $namaMatkul3 = "Matematika Diskrit";
     $sksMatkul3 = 3;
-    $nilaiHadir3 = 80;
+    $nilaiHadir3 = 86;
     $nilaiTugas3 = 75;
-    $nilaiUTS3 = 70;
-    $nilaiUAS3 = 85;
+    $nilaiUTS3 = 78;
+    $nilaiUAS3 = 75;
 
     $namaMatkul4 = "Sistem Operasi";
     $sksMatkul4 = 3;
     $nilaiHadir4 = 90;
-    $nilaiTugas4 = 80;
+    $nilaiTugas4 = 87;
     $nilaiUTS4 = 85;
     $nilaiUAS4 = 88;
 
@@ -94,21 +94,21 @@
     $sksMatkul5 = 3;
     $nilaiHadir5 = 69;
     $nilaiTugas5 = 80;
-    $nilaiUTS5 = 90;
-    $nilaiUAS5 = 100;
+    $nilaiUTS5 = 96;
+    $nilaiUAS5 = 97;
 
     // ---------- Fungsi Penentuan Grade dan Mutu ----------
     function hitungGrade($nilaiAkhir, $hadir) {
       if ($hadir < 70) return ['E', 0];
-      if ($nilaiAkhir >= 91) return ['A', 4];
-      if ($nilaiAkhir >= 81) return ['A-', 3.7];
-      if ($nilaiAkhir >= 76) return ['B+', 3.3];
-      if ($nilaiAkhir >= 71) return ['B', 3];
-      if ($nilaiAkhir >= 66) return ['B-', 2.7];
-      if ($nilaiAkhir >= 61) return ['C+', 2.3];
-      if ($nilaiAkhir >= 56) return ['C', 2];
-      if ($nilaiAkhir >= 51) return ['C-', 1.7];
-      if ($nilaiAkhir >= 36) return ['D', 1];
+      if ($nilaiAkhir >= 90) return ['A', 4];
+      if ($nilaiAkhir >= 80) return ['A-', 3.7];
+      if ($nilaiAkhir >= 75) return ['B+', 3.3];
+      if ($nilaiAkhir >= 72) return ['B', 3];
+      if ($nilaiAkhir >= 69) return ['B-', 2.7];
+      if ($nilaiAkhir >= 60) return ['C+', 2.3];
+      if ($nilaiAkhir >= 59) return ['C', 2];
+      if ($nilaiAkhir >= 55) return ['C-', 1.7];
+      if ($nilaiAkhir >= 30) return ['D', 1];
       return ['E', 0];
     }
 
