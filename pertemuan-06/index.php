@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ini Header</h1>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+            &#9776;
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>selamat datang</h2>
+            <P>ini contoh pragraf HTML.</P>
+        </section>
+        <section id="about">
+            <h2>About Muhammad azka Nazhan</h2>
+            <p><strong>NIM:</strong>2511500061</p>
+            <p><strong>NAMA:</strong>MUHAMMAD AZKA NAZHAN</p>
+            <p><strong>TMEPAT LAHIR:</strong>MUNTOK BANGKA BARAT</p>
+            <p><strong>TANGGAL LAHIR:</strong>14-APRIL-2007</p>
+            <p><strong>HOBI:</strong>BERMAIN GAME DAN BERMAIN FUTSAL</p>
+            <p><strong>PASANGAN:</strong>NASYWAERSA</p>
+            <p><strong>PEKERJAAN:</strong>MAHASISWA</p>
+            <p><strong>NAMA ORANG TUA:</strong>BAPAK TOTO DAN IBU MAEMUNAH</p>
+            <p><strong>NAMA KAKAK PERTAMA:</strong>FACHRURROZI AKBAR</p>
+            <p><strong>NAMA KAKAK KEDUA:</strong>SYAFA TASYA FEBRINA</p>
+
+
+    </section>
+    <section id="contact">
+            <h2>kontak kami</h2>
+      <form action="" method="GET">
+        <div class="form-row">
+          <label for="txtNama">Nama:</label>
+          <input type="text" id="txtNama" name="txtnama" placeholder="Masukan Nama" required autocomplete="name">
+        </div>
+
+        <div class="form-row">
+          <label for="txtemail">Email:</label>
+          <input type="email" id="txtemail" name="txtemail" placeholder="Masukan email" required autocomplete="email">
+        </div>
+
+        <label for="txtPesan">Pesan Anda:</label>
+        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+        <small id="charCount">0/200 karakter</small>
+        </label>
+
+        <div class="form-row">
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+        </div>
+        
+      </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Muhammad Azka Nazhan [2511500062]</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
