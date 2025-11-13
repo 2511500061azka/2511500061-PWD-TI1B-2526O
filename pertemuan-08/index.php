@@ -52,9 +52,9 @@ endif;
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="Entry Data Mahasiswa">
+    <section id="entrydatamahasiswa">
       <h2>Entry Data Mahasiswa</h2>
-      <form id="Entry Data Mahasiswa" action="index.php" method="INDEX">
+      <form id="entrydatamahasiswa" action="index.php" method="INDEX">
         <?php
       $NIM = "2511500061";
     $NAMA = "MUHAMMAD AZKA NAZHAN";

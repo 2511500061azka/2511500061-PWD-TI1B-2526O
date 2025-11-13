@@ -49,9 +49,11 @@ header li a:active {
   transform: translateY(1px);
 }
 
-#home:target~header nav a[href="#home"],
-#about:target~header nav a[href="#about"],
-#contact:target~header nav a[href="#contact"] {
+/* Efek aktif jika pakai anchor link */
+#home:target ~ header nav a[href="#home"],
+#about:target ~ header nav a[href="#about"],
+#contact:target ~ header nav a[href="#contact"],
+#entrydatamahasiswa:target ~ header nav a[href="#entrydatamahasiswa"] {
   background: #fff;
   color: #003366;
   font-weight: bold;
@@ -59,10 +61,11 @@ header li a:active {
   transition: all 0.3s ease;
 }
 
+/* Kontainer section utama */
 #home,
 #about,
 #contact,
-#EntryDataMahasiswa {
+#entrydatamahasiswa {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -74,7 +77,7 @@ header li a:active {
 #home h2,
 #about h2,
 #contact h2,
-#EntryDataMahasiswa h2 {
+#entrydatamahasiswa h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -88,7 +91,7 @@ header li a:active {
 
 #about p,
 #contact label,
-#EntryDataMahasiswa label {
+#entrydatamahasiswa label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -98,8 +101,8 @@ header li a:active {
 }
 
 #about strong,
-#contact label>span,
-#EntryDataMahasiswa label>span {
+#contact label > span,
+#entrydatamahasiswa label > span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -108,18 +111,19 @@ header li a:active {
   flex-shrink: 0;
 }
 
-
+/* Input dan textarea */
 #contact input,
 #contact textarea,
-#EntryDataMahasiswa input,
-#EntryDataMahasiswa textarea {
+#entrydatamahasiswa input,
+#entrydatamahasiswa textarea {
   flex: 1;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 8px;
 }
 
-#EntryDataMahasiswa button,
+/* Tombol */
+#entrydatamahasiswa button,
 #contact button {
   margin-top: 10px;
   display: inline-block;
@@ -132,29 +136,27 @@ header li a:active {
   margin-right: 8px;
 }
 
-
-#EntryDataMahasiswa [type="submit"],
+#entrydatamahasiswa [type="submit"],
 #contact button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
-#EntryDataMahasiswa [type="reset"],
+#entrydatamahasiswa [type="reset"],
 #contact button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
 }
 
-#EntryDataMahasiswa [type="submit"]:hover,
+#entrydatamahasiswa [type="submit"]:hover,
 #contact button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-
-#EntryDataMahasiswa [type="reset"]:hover,
+#entrydatamahasiswa [type="reset"]:hover,
 #contact button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);
@@ -176,6 +178,7 @@ footer {
   cursor: pointer;
 }
 
+/* Responsif */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -190,6 +193,7 @@ footer {
     background: #003366;
     width: 100%;
     padding: 5px 0;
+    transition: all 0.3s ease;
   }
 
   nav.active {
@@ -226,13 +230,13 @@ footer {
 
   #about p,
   #contact label,
-  #EntryDataMahasiswa label {
+  #entrydatamahasiswa label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
-  #contact label>span {
+  #contact label > span {
     text-align: left;
     padding-right: 0;
     margin-bottom: 2px;
@@ -241,8 +245,8 @@ footer {
   #contact input,
   #contact textarea,
   #contact button,
-  #EntryDataMahasiswa input,
-  #EntryDataMahasiswa textarea {
+  #entrydatamahasiswa input,
+  #entrydatamahasiswa textarea {
     width: 100%;
   }
 }
