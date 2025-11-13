@@ -9,4 +9,6 @@ Kelompok: TI1A<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>copy seluruh file dari elearnig (punya dosen) untuk latihan pertemuan-08</li>
+  <li>menambahkan section baru entry data mahasiwa</br>
+  <li>
 </ol>
