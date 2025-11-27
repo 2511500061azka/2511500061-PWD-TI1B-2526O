@@ -1,10 +1,17 @@
+
 <?php
 session_start();
-$sesnama = $_POST["txtNama"];
-$sesemail = $_POST["txtEmail"];
-$sespesan = $_POST["txtPesan"];
-$_SESSION["sesnama"] = $sesnama;
-$_SESSION["sesemail"] = $sesemail;
-$_SESSION["sespesan"] = $sespesan;
-header("location: index.php");
+$sesnama = $_POST["txtNAMA"];
+$sesemail = $_POST["txtEMAIL"];
+$sespesan = $_POST["txtPESAN"];
+$sesalamat = $_POST["txtALAMAT"];  
+$sestelepon = $_POST["txtTEKEEPON"]; 
+$sestanggalLahir = $_POST["txtTANGGALLAHIR"];  
+$_SESSION["sesNAMA"] = $sesnama;
+$_SESSION["sesEMAIL"] = $sesemail;
+$_SESSION["sesPESAN"] = $sespesan;
+$_SESSION["sesALAMAT"] = $sesalamat;  
+$_SESSION["sestelepon"] = $sestelepon; 
+$_SESSION["sestanggalLahir"] = $sestanggalLahir;  
+header("location: index.php"); 
 ?>

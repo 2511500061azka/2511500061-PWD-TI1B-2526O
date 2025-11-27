@@ -54,7 +54,6 @@ endif;
 
     <section id="entrydatamahasiswa">
       <h2>Entry Data Mahasiswa</h2>
-      <form id="entrydatamahasiswa" action="index.php" method="INDEX">
         <?php
       $NIM = "2511500061";
     $NAMA = "MUHAMMAD AZKA NAZHAN";
@@ -67,7 +66,6 @@ endif;
     $NAMA_KAKAK_PERTAMA = "FACHRURROZI AKBAR";
     $NAMA_KAKAK_KEDUA = "SYAFA TASYA FEBRINA";
     ?>
-    </section>
 
       <from action="proses.php" method="POST">
 
@@ -114,6 +112,7 @@ endif;
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+        </section>
 
     <section id="about">
       <?php
