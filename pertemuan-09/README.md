@@ -18,4 +18,5 @@
   <li>membuat file fungsi.php<li>
   <li>menambahkan kode tanggal bulan tahun di fungsi.php<li>
   <li>menambahkan kode untuk output bio data<li>
+  <li>mengubah kode baris 123-129<li>
 </ol>
