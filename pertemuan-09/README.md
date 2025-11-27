@@ -17,4 +17,5 @@
   <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach<li>
   <li>membuat file fungsi.php<li>
   <li>menambahkan kode tanggal bulan tahun di fungsi.php<li>
+  <li>menambahkan kode untuk output bio data<li>
 </ol>
