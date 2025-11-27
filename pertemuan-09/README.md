@@ -11,4 +11,7 @@
   <li>tangkap session dari file proses selesai</li>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
+  <li>mengubah data pos.php ke array associative<li>
+  <li>menghapus kode baris 19 sampai 67<li>
+  <li>menambahkan kode foreach setelah baris h2<li>
 </ol>
