@@ -14,4 +14,5 @@
   <li>mengubah data pos.php ke array associative<li>
   <li>menghapus kode baris 19 sampai 67<li>
   <li>menambahkan kode foreach setelah baris h2<li>
+  <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach<li>
 </ol>
