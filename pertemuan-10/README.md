@@ -4,3 +4,4 @@
 <li>menambahkan kode mySQL di myPHPadmin<li>
 <li>menambahkan insert untuk tbl_tamu<li>
 <li>membuat file baru read_inc.php dan menambahkan kode di file tersebut<li>
+<li>merubah kode barisan index.php nomor 146<li>
