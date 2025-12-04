@@ -5,3 +5,4 @@
 <li>menambahkan insert untuk tbl_tamu<li>
 <li>membuat file baru read_inc.php dan menambahkan kode di file tersebut<li>
 <li>merubah kode barisan index.php nomor 146<li>
+<li>manghapus kode index.php baris 133-141<li>
