@@ -8,12 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     redirect_ke('index.php#contact');
 }
 
-
 $nama  = bersihkan($_POST['txtNama'] ?? '');
 $email = bersihkan($_POST['txtEmail'] ?? '');
 $pesan = bersihkan($_POST['txtPesan'] ?? '');
 
-$errors = []; 
+$errors = [];
+
 
 if ($nama === '') {
     $errors[] = 'Nama wajib diisi.';
@@ -29,6 +29,23 @@ if ($pesan === '') {
     $errors[] = 'Pesan wajib diisi.';
 }
 
+
+
+if (strlen($nama) < 3) {
+    $errors[] = 'Nama minimal 3 karakter.';
+}
+
+if (strlen($pesan) < 10) {
+    $errors[] = 'Pesan minimal 10 karakter.';
+}
+
+
+$captcha = $_POST['captcha'] ?? '';
+if ($captcha != 5) {
+    $errors[] = 'Jawaban captcha salah.';
+}
+
+ 
 if (!empty($errors)) {
     $_SESSION['old'] = [
         'nama'  => $nama,
@@ -43,18 +60,18 @@ if (!empty($errors)) {
 $sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
-if (! $stmt) {
+if (!$stmt) {
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('index.php#contact');
 }
 
 mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
 
-if (mysqli_stmt_execute($stmt)) {   
+if (mysqli_stmt_execute($stmt)) {
     unset($_SESSION['old']);
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
-    redirect_ke('index.php#contact');   
-} else {   
+    redirect_ke('index.php#contact');
+} else {
     $_SESSION['old'] = [
         'nama'  => $nama,
         'email' => $email,
@@ -66,6 +83,7 @@ if (mysqli_stmt_execute($stmt)) {
 }
 
 mysqli_stmt_close($stmt);
+
 
 $arrBiodata = [
   "nim" => $_POST["txtNim"] ?? "",
@@ -79,6 +97,8 @@ $arrBiodata = [
   "kakak" => $_POST["txtNmKakak"] ?? "",
   "adik" => $_POST["txtNmAdik"] ?? ""
 ];
+
 $_SESSION["biodata"] = $arrBiodata;
 
 header("location: index.php#about");
+exit;
