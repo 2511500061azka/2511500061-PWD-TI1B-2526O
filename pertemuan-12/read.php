@@ -31,9 +31,9 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
   </div>
 <?php endif; ?>
 
+<?php $no = 1; ?>
+<?php $id = 1; ?>
 
-$no = 1;
-?>
 <table border="1" cellpadding="8" cellspacing="0">
   <tr>
     <th>No.</th>
@@ -49,7 +49,7 @@ $no = 1;
     <tr>
       <td><?= $no++; ?></td>
       <td><a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a></td>
-      <td><?= $row['cid']; ?></td>
+      <td><?= $id++; ?></td>
       <td><?= htmlspecialchars($row['cnama']); ?></td>
       <td><?= htmlspecialchars($row['cemail']); ?></td>
       <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>

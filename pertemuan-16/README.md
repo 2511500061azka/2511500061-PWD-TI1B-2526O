@@ -1,3 +1,1 @@
-﻿## pertemuan-16
-
-Deskripsi pertemuan ini.
+# pertemuan-16
